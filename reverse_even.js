@@ -1,0 +1,14 @@
+function reverseEvens(N,A){
+  //write code here
+  let ans=""
+  let count=0
+  for(let i=N-1;i>=0;i--){
+      if(A[i]%2==0){
+          ans+=A[i]+" "
+      
+          count++
+      }
+  }
+  console.log(count)
+  console.log(ans)
+}
