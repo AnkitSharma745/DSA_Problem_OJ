@@ -1,0 +1,17 @@
+    function convertStr(N,str) {
+    //write code here
+    let lower ="abcdefghijklmnopqrstuvwxyz"
+    let upper ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    let bag=""
+    for(let i=0;i<N;i++){
+        for(let j=0;j<upper.length;j++){
+            if(str[i]==upper[j]){
+                bag+= lower[j]
+            }
+            else if(str[i]==lower[j]){
+                bag+=upper[j]
+            }
+        }
+    }
+    console.log(bag)
+}
